@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: lightblue;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+     section.event-footer {
+    background-color:#2A3852;
+}
+
+        .event-footer-Maintitles {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: Proxima-nova, Helvetica, Arial;
+            text-align: center;
+        }
+
+        section.event-footer a {
+            font-family: Proxima-nova, Helvetica, Arial;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .event-footer-img {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .event-footer-img>img {
+            max-height: 130px;
+            max-width: 100%;
+        }
+
+
+
+        .bottom-social-group {
+            text-align: center;
+        }
+
+        .event-footer-content {
+            margin-bottom: 10px;
+            font-weight: 100;
+        }
+
+        .event-footer-bottom {
+            padding: 15px 0px;
+        }
+
+        .row {
+            margin: 0px;
+        }
+
+        .event-footer-bottom {
+            background-color: rgba(00, 00, 00, 0.13);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .event-footer span {
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: 100;
+        }
+
+        span.bottom-elements {
+            padding: 0px 10px;
+        }
+
+        span.bottom-elements:hover {
+            opacity: 0.5;
+            transition: 0.4s;
+        }
+
+        @media (min-width: 768px) {
+            .event-footer-section {
+                padding: 45px 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .event-footer-section {
+                padding: 20px;
+            }
+
+            .event-footer-section {
+                text-align: center;
+            }
+        }
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="active" href="C:\Users\Admin\Desktop\jad\jad.html">Accueil</a></li>
+  <li><a href="#news">Nos propos</a></li>
+  <li><a href="#contact">Nos Service</a></li>
+  <li class="right"><a  href="C:\Users\Admin\Desktop\jad\contactus.html">Nos contact</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="https://www.shareinsight.us/Images/content/82/1004984.jpg" alt="jad Aouab" width="100%" >
+  <div class="text">Jad Bakkali</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="https://www.uksfbooknews.net/file/2020/01/shutterstock_176743691-800x400-1.jpg" style="width:100%">
+  <div class="text">Jad Bakkali</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+ 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="card-group">
+  <div class="card">
+    <img src="https://www.challenge.ma/wp-content/uploads/2020/02/corona-controle-aeroport-e1581772485955-650x366.jpg" class="card-img-top" alt="..." width="300px" height="300px" >
+    <div class="card-body">
+      <h5 class="card-title" style="color:teal">CORONAVIRUS AU MAROC: 160 CAS DE CONTAMINATION EN 24 HEURES, LES DÉCÈS TOUJOURS EN BAISSE (INFOGRAPHIES)</h5>
+      <p class="card-text">Le nombre des cas confirmés ce samedi est pratiquement le même que celui enregistré la veille. Le nombre des contaminations reste toutefois au-dessous des niveaux enregistrés entre le 16 et le 26 avril. Si la courbe des infections ne connaît pas un rebond significatif dû à l’apparition de nouveaux foyers, il est attendu, selon des sources médicales interrogées par Le360, que le pic épidémique au Maroc soit dépassé le jeudi 7 mai. A signaler que 82% des nouvelles contaminations ces dernières 24h se comptent parmi les contacts de personnes contaminées (les cas-contacts)....</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="C:\Users\Admin\Desktop\jad\news1.html" class="btn btn-primary btn active" role="button" aria-pressed="true">Read the Article</a>
+</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://fr.hespress.com/wp-content/uploads/2020/05/casablanca-covid-19-730x410.jpg" class="card-img-top" alt="..." width="300px" height="300px">
+    <div class="card-body">
+      <h5 class="card-title" style="color:teal">Coronavirus/Maroc: 1508 cas enregistrés à Casablanca</h5>
+      <p class="card-text" >Le Maroc a enregistré 3.985 nouveaux cas porteurs du coronavirus ces dernières 24 heures portant le total des cas recensés au niveau national depuis le début de l’épidémie à 207.718 cas.<br>Actuellement, le total des cas actifs passe de 31.582 cas à 32.621 cas. Parmi eux, 766 cas, ce qui représente un taux d’occupation des lits de réanimation dédiés au coronavirus de 34%.<br>En termes d’incidence nationale, le taux passe à 572 cas par 100.000 habitants contre 561 la veille continuant la tendance haussière. Sur les dernières 24h, l’incidence est de 11 cas par 100.000 habitants.
+
+La région Casablanca-Settat arrive en tête des contaminations, avec 1 876 nouveaux cas avec une prédominances des cas dans la ville de Casablanca qui compte 1 508 cas, suivie par 92 cas à Nouaceur, 79 à Mohammedia, 55 à Settat, 51 à El Jadida, 44 à Mediouna, 33 à Berrechid et 14 à Benslimane...</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="C:\Users\Admin\Desktop\jad\news2.html" class="btn btn-primary btn active" role="button" aria-pressed="true">Read the Article</a>
+</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.challenge.ma/wp-content/uploads/2020/10/covid-750x369.jpg" class="card-img-top" alt="..." width="300px" height="300px">
+    <div class="card-body">
+      <h5 class="card-title" style="color:teal">Coronavirus : le Maroc s’apprête à déployer des tests Covid antigéniques rapides</h5>
+      <p class="card-text">Une évaluation de trois tests antigéniques est en cours à l’Institut Pasteur à Casablanca, à la demande du ministre de la Santé, Khalid Ait Taleb. Le Maroc entend utiliser ces tests à une très large échelle en cas de deuxième vague de la pandémie cet hiver.<br>Le Maroc renforce son arsenal de test de dépistage Covid-19. Selon notre confrère Medias24.com, le royaume s’apprête en effet à introduire les tests Covid antigéniques rapides. Notons que ces tests présentent des avantages complémentaires aux tests PCR. Le site d’information précise ainsi qu’une évaluation de trois tests antigéniques différents est en cours à l’Institut Pasteur à Casablanca à la demande du ministre de la Santé, Khalid Ait Taleb.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="C:\Users\Admin\Desktop\jad\news3.html" class="btn btn-primary btn active" role="button" aria-pressed="true">Read the Article</a>
+</small>
+    </div>
+  </div>
+</div>
+</div>
+<br> <br>
+  <section style="background-color:#2A3852;" class="event-footer">
+
+    <div class="row footer-top">
+
+      <div class="col-xs-12 col-md-2 event-footer-section">
+        <div class="event-footer-Maintitles" style=" ">Rights & Logo</div>
+        <a href="https://hyve.group/Home" target="_self">
+          <div class="event-footer-img"><img src="C:\Users\Admin\Desktop\jad\jad.png">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-md-4 event-footer-section">
+        <div class="event-footer-Maintitles" style="">
+          Notre Service
+        </div>
+        <div class="event-footer-content">
+          <span style="">
+            Le personnel de Pence touché par l'épidémie de COVID-19 alors que Biden dit que Trump s'est rendu à la pandémie Le président polonais a un coronavirus et s'excuse auprès de ses contacts
+          </span>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 col-md-3 event-footer-section">
+        <div class="event-footer-Maintitles" style="">
+          Nos Propos
+        </div>
+        <div class="event-footer-content" style="
+">
+          <span style="
+">
+            Abonnez-vous à notre Infolettre pour recevoir nos publications par courriel. M'abonner. Latest blog post. BLOGUE. Santé - mieux-être / 6 avril 2020 Des lectures pour nettoyer le corps, l’âme et l’esprit Voir plus.
+          </span>
+          <div><button type="button" class="btn btn-info" style="
+    margin-top: 20px;
+">Abonnement</button></div>
+
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 col-md-3 event-footer-section bottom-social-group">
+
+        <div class="event-footer-Maintitles" style=" ">Abonnée vos</div>
+        <a class="event-footer-social" title="Facebook link" target="_blank" href="">
+          <img src="http://2.bp.blogspot.com/-4pwP2eVWvVg/UtRpEn2vM7I/AAAAAAAAFG4/s2Efm9OSJO4/s1600/00-cracked-facebook-logo-26-10-13.jpg" width="50px" height="50px">
+        </a>
+        <a class="event-footer-social" title="Facebook link" target="_blank" href="">
+           <img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png" width="50px" height="50px">
+        </a>
+        <a class="event-footer-social" title="Facebook link" target="_blank" href="">
+          <img src="https://png.pngtree.com/template/20190725/ourlarge/pngtree-twitter-logo-png-image_282639.jpg"  width="50px" height="50px" >
+        </a>
+        <br><br>
+      </div>
+
+    </div>
+
+    <div class="row footer-bottom">
+      <div class="event-footer-bottom col-xs-12 col-md-12">
+        <span class="bottom-elements">
+          <a href="">
+            Enviremment </a>
+        </span><span class="bottom-elements">
+          <a href="">
+            Policy </a>
+        </span><span class="bottom-elements">
+          <a href="">
+            Droit </a>
+        </span>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
